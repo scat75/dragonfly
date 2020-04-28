@@ -1,0 +1,15 @@
+<h4>ActiveMQ</h4>
+<div style="width:20px;height:20px;background-color:green;"
+         *ngIf="broker.status">
+</div>
+<div style="width:20px;height:20px;background-color:red;"
+         *ngIf="!broker.status">
+</div>
+
+<h4>ElasticSearch</h4>
+<div style="width:20px;height:20px;background-color:green;"
+         *ngIf="elasticStatus === true">
+</div>
+<div style="width:20px;height:20px;background-color:red;"
+         *ngIf="elasticStatus === false">
+</div>

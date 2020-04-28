@@ -1,0 +1,24 @@
+<table class="table table-dark">
+  <thead>
+    <tr>
+      <th scope="col"></th>
+      <th scope="col">Cache</th>
+      <th scope="col">Temporaire</th>
+      <th scope="col">Stockage</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">Valeurs courantes</th>
+      <td>{{ broker.memoryPercentUsageReadable }}</td>
+      <td>{{ broker.tempPercentUsageReadable }}</td>
+      <td>{{ broker.storePercentUsageReadable }}</td>
+    </tr>
+    <tr>
+      <th scope="row">Valeurs limites</th>
+      <td>{{ broker.memoryLimitReadable }}</td>
+      <td>{{ broker.tempLimitReadable }}</td>
+      <td>{{ broker.storeLimitReadable }}</td>
+    </tr>
+  </tbody>
+</table>

@@ -1,0 +1,8 @@
+<div class="col-xs-12">
+  <h2>Mes packs</h2>
+  <ul *ngIf="allpacks" class="list-group">
+  <app-pack *ngFor="let pack of allpacks.packs"
+            [description]="pack.description"
+            [queues]="pack.queues"></app-pack>
+  </ul>
+</div>
